@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECESS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_js/style.css">
+</head>
+<body>
+    <header class="header-full">
+        <div class="logo-wrapper" id="logoWrapper">
+            <div class="logo-big" id="mainLogo">RECESS</div>
+            <img class="frog" src="froggo.gif" alt="Logo" />
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" data-target="main-home">Home</a></li>
+                <li><a href="#" data-target="main-music">Music</a></li>
+                <li><a href="#" data-target="main-movies">Movies</a></li>
+                <li><a href="#" data-target="main-gif">Gif</a></li>
+                <li><a href="#" data-target="main-about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="main-home" class="main-section" style="display:block;">
+            <div class="home-top">
+
+            </div>
+            <div class="home-boxes">
+                <div class="row">
+                    <div class="box" style="width:33.33%">Box 1</div>
+                    <div class="box" style="width:33.33%">Box 2</div>
+                    <div class="box" style="width:33.33%">Box 3</div>
+                </div>
+                <div class="row">
+                    <div class="box" style="width:35%">Box 4</div>
+                    <div class="box" style="width:65%">Box 5</div>
+                </div>
+                <div class="row">
+                    <div class="box" style="width:75%">Box 6</div>
+                    <div class="box" style="width:25%">Box 7</div>
+                </div>
+            </div>
+        </section>
+        <section id="main-music" class="main-section" style="display:none;">
+            <h2>Music</h2>
+            <p>hello</p>
+        </section>
+        <section id="main-movies" class="main-section" style="display:none;">
+            <h2>Movies</h2>
+            <p>hello</p>
+        </section>
+        <section id="main-gif" class="main-section" style="display:none;">
+            <div class="gif-heading-row" style="display: flex; align-items: center; gap: 18px; justify-content: center; margin-bottom: 0;">
+                <span class="gif-heading">GIF LIBRARY</span>
+                <span id="gifInfoToggle" class="gifInfoToggle">▼</span>
+            </div>
+            <div id="gifInfoBox" style="font-family: Arial, Helvetica, sans-serif; display: none; width: 100%; max-width: 900px; margin: 0 auto 12px auto; background: #f5f5f5; border: 2px solid #000000; padding: 18px 32px 14px 32px; font-size: 1.2rem; color: #222; box-shadow: 0 2px 8px #0001; text-align: center;" class="gif-def">
+                <img class="gif-info-img" src="GIF/mathematics.gif">
+                <p class="gif-info-p-gif">GIF</p>
+                <p class="gif-info-p-pronounce">/ɡif,jif/</p>
+                <p class="gif-info-p-noun">noun</p>
+                <p class="gif-info-p-computing">COMPUTING</p>
+                <p class="gif-info-p-lossless"><b>a <u>lossless</u> format for image files that supports both animated and static images.</b></p>
+                <p class="gif-info-p-aGifImg">"a GIF image"</p>
+                <p class="gif-info-p-file"><span class="gif-info-p-file-sub">• </span> a file in GIF format.</p>
+                <p class="gif-info-p-pluralNoun"><span class="gif-info-p-pluralNoun-sub">plural noun: </span><span class="gif-info-p-pluralNoun-sub-gif"> GIFs</span></p>
+            </div>
+            <div class="gif-accordion-content" id="gifAccordionContent">
+                    <div class="gif-controls">
+                        <label>Sort by:
+                            <select id="gif-sort">
+                                <option value="auto" selected>Auto</option>
+                                <option value="name">Name (A-Z)</option>
+                                <option value="color">Color</option>
+                                <option value="type">Type</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="gif-folder" id="gif-folder">
+                <div class="gif-item" data-name="Unicorn" data-color="0grey" data-type="animal-u"><img src="GIF/unicorn.gif" alt="Unicorn"><span>Unicorn</span></div>
+                <div class="gif-item" data-name="Alien" data-color="3green" data-type="space-p"><img src="GIF/Alien.gif" alt="Alien"><span>Alien</span></div>
+                <div class="gif-item" data-name="Dolphin" data-color="2blue" data-type="animal-dol"><img src="GIF/dolphin.gif" alt="Dolphin"><span>Dolphin</span></div>
+                <div class="gif-item" data-name="Guitarist" data-color="6red" data-type="people-m"><img src="GIF/guitarist.gif" alt="Guitarist"><span>Guitarist</span></div>
+                <div class="gif-item" data-name="CD" data-color="4yellow" data-type="object-tech-music-cd"><img src="GIF/CD.gif" alt="CD"><span>CD</span></div>
+                <div class="gif-item" data-name="Flower" data-color="0pink" data-type="plant"><img src="GIF/flower.gif" alt="Flower"><span>Flower</span></div>
+                <div class="gif-item" data-name="Silly Turtle" data-color="3green" data-type="animal-turt"><img src="GIF/sillyTurtle.gif" alt="Silly Turtle"><span>Silly Turtle</span></div>
+                <div class="gif-item" data-name="Turtle" data-color="3green" data-type="animal-turt"><img src="GIF/turtle.gif" alt="Turtle"><span>Turtle</span></div>
+                <div class="gif-item" data-name="DJ" data-color="0grey" data-type="people-m"><img src="GIF/DJ.gif" alt="DJ"><span>DJ</span></div>
+                <div class="gif-item" data-name="Hula Hoop Cat" data-color="0pink" data-type="animal-cat"><img src="GIF/hoopCAT.gif" alt="Hula Hoop Cat"><span>Hoop Cat</span></div>
+                <div class="gif-item" data-name="Skull" data-color="3green" data-type="people-y"><img src="GIF/skull.gif" alt="Skull"><span>Skull</span></div>
+                <div class="gif-item" data-name="Skull Dance" data-color="0grey" data-type="people-y"><img src="GIF/skullDance.gif" alt="Skull Dance"><span>Skull Dance</span></div>
+                <div class="gif-item" data-name="Bee" data-color="4yellow" data-type="animal-bug-b"><img src="GIF/BEE.gif" alt="Bee"><span>Bee</span></div>
+                <div class="gif-item" data-name="Fish" data-color="6red" data-type="animal-f"><img src="GIF/fish2.gif" alt="Fish"><span>Fish</span></div>
+                <div class="gif-item" data-name="Fish" data-color="2blue" data-type="animal-f"><img src="GIF/fish1.gif" alt="Fish"><span>Fish</span></div>
+                <div class="gif-item" data-name="Cat" data-color="0grey" data-type="animal-cat"><img src="GIF/cat.gif" alt="Cat"><span>Cat</span></div>
+                <div class="gif-item" data-name="Bee" data-color="4yellow" data-type="animal-bug-b"><img src="GIF/b.gif" alt="Bee"><span>Bee</span></div>
+                <div class="gif-item" data-name="Ladybug" data-color="6red" data-type="animal-bug-l"><img src="GIF/ladybug.gif" alt="Ladybug"><span>Ladybug</span></div>
+                <div class="gif-item" data-name="Fish" data-color="5orange" data-type="animal-f"><img src="GIF/fish3.gif" alt="Fish"><span>Fish</span></div>
+                <div class="gif-item" data-name="Dancer" data-color="5.5tan" data-type="people-d"><img src="GIF/dance.gif" alt="Dancer"><span>Dancer</span></div>
+                <div class="gif-item" data-name="Dancer" data-color="0grey" data-type="people-d"><img src="GIF/dance2.gif" alt="Dancer"><span>Dancer</span></div>
+                <div class="gif-item" data-name="Music Note" data-color="6red" data-type="music-note"><img src="GIF/musicNote.gif" alt="Music Note"><span>Music Note</span></div>
+                <div class="gif-item" data-name="Burger" data-color="5orange" data-type="food"><img src="GIF/burger.gif" alt="Burger"><span>Burger</span></div>
+                <div class="gif-item" data-name="Robot" data-color="0grey" data-type="people-z"><img src="GIF/robot.gif" alt="Robot"><span>Robot</span></div>
+                <div class="gif-item" data-name="Alien" data-color="3green" data-type="space-p"><img src="GIF/alien2.gif" alt="Alien"><span>Alien</span></div>
+                <div class="gif-item" data-name="Fish" data-color="3green" data-type="animal-f"><img src="GIF/fish4.gif" alt="Fish"><span>Fish</span></div>
+                <div class="gif-item" data-name="Fish" data-color="5orange" data-type="animal-f"><img src="GIF/Fish5.gif" alt="Fish"><span>Fish</span></div>
+                <div class="gif-item" data-name="Ladybug" data-color="6red" data-type="animal-bug-l"><img src="GIF/ladybug2.gif" alt="Ladybug"><span>Ladybug</span></div>
+                <div class="gif-item" data-name="Emoji Spin" data-color="3green" data-type="icon"><img src="GIF/emojiSpin.gif" alt="Emoji Spin"><span>Emoji Spin</span></div>
+                <div class="gif-item" data-name="Eye Monster" data-color="1.5purple" data-type="animal-z"><img src="GIF/eyeMonster.gif" alt="Eye Monster"><span>Eye Monster</span></div>
+                <div class="gif-item" data-name="Frog" data-color="3green" data-type="animal-fr"><img src="GIF/frog.gif" alt="Frog"><span>Frog</span></div>
+                <div class="gif-item" data-name="Frog" data-color="3green" data-type="animal-fr"><img src="froggo.gif" alt="Frog"><span>Frog</span></div>
+                <div class="gif-item" data-name="Ladybug" data-color="6red" data-type="animal-bug-l"><img src="GIF/ladybug3.gif" alt="Ladybug"><span>Ladybug</span></div>
+                <div class="gif-item" data-name="Butterfly" data-color="5orange" data-type="animal-bug-bu"><img src="GIF/butterfly.gif" alt="Butterfly"><span>Butterfly</span></div>
+                <div class="gif-item" data-name="Dancer" data-color="0pink" data-type="people-d"><img src="GIF/dance3.gif" alt="Dancer"><span>Dancer</span></div>
+                <div class="gif-item" data-name="Dancer" data-color="6red" data-type="people-d"><img src="GIF/dance4.gif" alt="Dancer"><span>Dancer</span></div>
+                <div class="gif-item" data-name="Dancer" data-color="5.5tan" data-type="people-d"><img src="GIF/dance5.gif" alt="Dancer"><span>Dancer</span></div>
+                <div class="gif-item" data-name="Ninja Turtle" data-color="3green" data-type="people-x"><img src="GIF/ninjaTurtle.gif" alt="Ninja Turtle"><span>Ninja Turtle</span></div>
+                <div class="gif-item" data-name="Men in Black" data-color="0black" data-type="people-x"><img src="GIF/MIB.gif" alt="Men in Black"><span>Men in Black</span></div>
+                <div class="gif-item" data-name="DanceMan" data-color="zvar" data-type="people-z-b"><img src="GIF/danceMan.gif" alt="DanceMan"><span>DanceMan</span></div>
+                <div class="gif-item" data-name="Jams" data-color="4yellow" data-type="z-real"><img src="GIF/DJs.gif" alt="Jams"><span>Jams</span></div>
+                <div class="gif-item" data-name="Power Up" data-color="zvar" data-type="people"><img src="GIF/PowerUp.gif" alt="Power Up"><span>Power Up</span></div>
+                <div class="gif-item" data-name="Blast" data-color="0grey" data-type="people-x"><img src="GIF/Blast.gif" alt="Blast"><span>Blast</span></div>
+                <div class="gif-item" data-name="Galaxy" data-color="0black" data-type="space-g"><img src="GIF/galaxy.gif" alt="Galaxy"><span>Galaxy</span></div>
+                <div class="gif-item" data-name="Transformer" data-color="0grey" data-type="people-z"><img src="GIF/transform.gif" alt="Transformer"><span>Transformer</span></div>
+                <div class="gif-item" data-name="Alien Dance" data-color="0grey" data-type="space-p"><img src="GIF/AlienDance.gif" alt="Alien Dance"><span>Alien Dance</span></div>
+                <div class="gif-item" data-name="Skeleton" data-color="0grey" data-type="people-y"><img src="GIF/skelly.gif" alt="Skeleton"><span>Skeleton</span></div>
+                <div class="gif-item" data-name="Blob" data-color="1.5purple" data-type="zabstract"><img src="GIF/blob.gif" alt="Blob"><span>Blob</span></div>
+                <div class="gif-item" data-name="Galaxy" data-color="2blue" data-type="space-g"><img src="GIF/galaxy2.gif" alt="Galaxy"><span>Galaxy</span></div>
+                <div class="gif-item" data-name="Computer" data-color="0grey" data-type="object-tech-comp"><img src="GIF/computer.gif" alt="Computer"><span>Computer</span></div>
+                <div class="gif-item" data-name="Walking" data-color="2blue" data-type="people-z-b"><img src="GIF/walking.gif" alt="Walking"><span>Walking</span></div>
+                <div class="gif-item" data-name="El Barto" data-color="zvar" data-type="people-x"><img src="GIF/bart.gif" alt="El Barto"><span>El Barto</span></div>
+                <div class="gif-item" data-name="Ghost" data-color="0grey" data-type="people-z-a"><img src="GIF/ghost.gif" alt="Ghost"><span>Ghost</span></div>
+                <div class="gif-item" data-name="Violin" data-color="0grey" data-type="music-i"><img src="GIF/violin.gif" alt="Violin"><span>Violin</span></div>
+                <div class="gif-item" data-name="Bat" data-color="6red" data-type="animal-bat"><img src="GIF/Bat.gif" alt="Bat"><span>Bat</span></div>
+                <div class="gif-item" data-name="Dragon" data-color="3green" data-type="animal-z"><img src="GIF/dragon.gif" alt="Dragon"><span>Dragon</span></div>
+                <div class="gif-item" data-name="Dog" data-color="zvar" data-type="animal-dog"><img src="GIF/dog.gif" alt="Dog"><span>Dog</span></div>
+                <div class="gif-item" data-name="Dancers" data-color="zvar" data-type="people-d"><img src="GIF/dancerz.gif" alt="Dancers"><span>Dancers</span></div>
+                <div class="gif-item" data-name="Cat Bust" data-color="5orange" data-type="animal-cat"><img src="GIF/catBust.gif" alt="Cat Bust"><span>Cat Bust</span></div>
+                <div class="gif-item" data-name="Strong Ant" data-color="animal-bug-a" data-type="abstract"><img src="GIF/antApple.gif" alt="Strong Ant"><span>Strong Ant</span></div>
+                <div class="gif-item" data-name="CD" data-color="0grey" data-type="object-tech-music-cd"><img src="GIF/music.gif" alt="CD"><span>CD</span></div>
+                <div class="gif-item" data-name="Happy Clock" data-color="5orange" data-type="object-tech-z-clock"><img src="GIF/clock.gif" alt="Happy Clock"><span>Happy Clock</span></div>
+                <div class="gif-item" data-name="Twin Dogs" data-color="5orange" data-type="animal-dog"><img src="GIF/twinDog.gif" alt="Twin Dogs"><span>Twin Dogs</span></div>
+                <div class="gif-item" data-name="Seahorse" data-color="4yellow" data-type="animal-f-horse"><img src="GIF/seahorse.gif" alt="Seahorse"><span>Seahorse</span></div>
+                <div class="gif-item" data-name="Granny Dance" data-color="0grey" data-type="people-d"><img src="GIF/danceGramma.gif" alt="Granny Dance"><span>Granny Dance</span></div>
+                <div class="gif-item" data-name="Doom" data-color="3green" data-type="people-x"><img src="GIF/doom.gif" alt="Doom"><span>Doom</span></div>
+                <div class="gif-item" data-name="Doom" data-color="3green" data-type="people-x"><img src="GIF/doom2.gif" alt="Doom"><span>Doom</span></div>
+                <div class="gif-item" data-name="Music Spin" data-color="2blue" data-type="music-note"><img src="GIF/muiscSpin.gif" alt="Music Spin"><span>Music Spin</span></div>
+                <div class="gif-item" data-name="Spinny" data-color="1.5purple" data-type="zabstract"><img src="GIF/spinny.gif" alt="Spinny"><span>Spinny</span></div>
+                <div class="gif-item" data-name="Gyroid" data-color="zvar" data-type="zabstract"><img src="GIF/gyroid.gif" alt="Gyroid"><span>Gyroid</span></div>
+                <div class="gif-item" data-name="3D Wave" data-color="6red" data-type="zabstract"><img src="GIF/wave.gif" alt="3D Wave"><span>3D Wave</span></div>
+                <div class="gif-item" data-name="Ninja Turtle" data-color="3green" data-type="people-x"><img src="GIF/ninjaTurtle2.gif" alt="Ninja Turtle"><span>Ninja Turtle</span></div>
+                <div class="gif-item" data-name="Cube" data-color="2blue" data-type="zabstract"><img src="GIF/cube2.gif" alt="Cube"><span>Cube</span></div>
+                <div class="gif-item" data-name="Cube" data-color="0grey" data-type="zabstract"><img src="GIF/cube.gif" alt="Cube"><span>Cube</span></div>
+                <div class="gif-item" data-name="Orb" data-color="0pink" data-type="zabstract"><img src="GIF/orb.gif" alt="Orb"><span>Orb</span></div>
+                <div class="gif-item" data-name="Face" data-color="3green" data-type="people-z-close"><img src="GIF/face.gif" alt="Face"><span>Face</span></div>
+                <div class="gif-item" data-name="Spinny" data-color="zvar" data-type="zabstract"><img src="GIF/spin.gif" alt="Spinny"><span>Spinny</span></div>
+                <div class="gif-item" data-name="Doom" data-color="3green" data-type="people-x"><img src="GIF/doom3.gif" alt="Doom"><span>Doom</span></div>
+                <div class="gif-item" data-name="Doom" data-color="3green" data-type="people-x"><img src="GIF/doom4.gif" alt="Doom"><span>Doom</span></div>
+                <div class="gif-item" data-name="Gyroid" data-color="zvar" data-type="zabstract"><img src="GIF/gyroid2.gif" alt="Gyroid"><span>Gyroid</span></div>
+                <div class="gif-item" data-name="Mario" data-color="2blue" data-type="bgs"><img src="GIF/Mario.gif" alt="Mario"><span>Mario</span></div>
+                <div class="gif-item" data-name="Robot" data-color="4yellow" data-type="people-z"><img src="GIF/robo.gif" alt="Robot"><span>Robot</span></div>
+                <div class="gif-item" data-name="Gyroid" data-color="zvar" data-type="zabstract"><img src="GIF/gyroid3.gif" alt="Gyroid"><span>Gyroid</span></div>
+                <div class="gif-item" data-name="Moonlight" data-color="0black" data-type="bgs"><img src="GIF/moonBg.gif" alt="Moonlight"><span>Moonlight</span></div>
+                <div class="gif-item" data-name="Moonlight" data-color="2blue" data-type="bgs"><img src="GIF/bg.gif" alt="Moonlight"><span>Moonlight</span></div>
+                <div class="gif-item" data-name="Break Beats!" data-color="0black" data-type="people-d"><img src="GIF/breakBeats.gif" alt="Break Beats!"><span>Break Beats!</span></div>
+                <div class="gif-item" data-name="Collage" data-color="5.5tan" data-type="bgs"><img src="GIF/album.gif" alt="Collage"><span>Collage</span></div>
+                <div class="gif-item" data-name="Alien" data-color="3green" data-type="space-p"><img src="GIF/alienHea.gif" alt="Alien"><span>Alien</span></div>
+                <div class="gif-item" data-name="Angel Fish" data-color="zvar" data-type="bgs"><img src="GIF/angelFish.gif" alt="Angel Fish"><span>Angel Fish</span></div>
+                <div class="gif-item" data-name="Ninja Turtle" data-color="3green" data-type="people-x"><img src="GIF/ninjaTurtle.gif" alt="Ninja Turtle"><span>Ninja Turtle</span></div>
+                <div class="gif-item" data-name="Robot" data-color="6red" data-type="people-z"><img src="GIF/robotGuy.gif" alt="Robot"><span>Robot</span></div>
+                <div class="gif-item" data-name="Cityscape" data-color="0black" data-type="bgs"><img src="GIF/cityscape.gif" alt="Cityscape"><span>Cityscape</span></div>
+                <div class="gif-item" data-name="Thinker" data-color="zvar" data-type="people-z-close"><img src="GIF/thinker.gif" alt="Thinker"><span>Thinker</span></div>
+                <div class="gif-item" data-name="Dancer" data-color="2blue" data-type="people-d"><img src="GIF/dancer4.gif" alt="Dancer"><span>Dancer</span></div>
+                <div class="gif-item" data-name="Space Dog" data-color="0grey" data-type="space-dog"><img src="GIF/spaceDog.gif" alt="Space Dog"><span>Space Dog</span></div>
+                <div class="gif-item" data-name="Alien" data-color="3green" data-type="space-p"><img src="GIF/alien3.gif" alt="Alien"><span>Alien</span></div>
+                <div class="gif-item" data-name="Bling" data-color="0pink" data-type="icon-bling"><img src="GIF/bling.gif" alt="Bling"><span>Bling</span></div>
+                <div class="gif-item" data-name="Fireworks" data-color="5orange" data-type="icon-bling-f"><img src="GIF/fireworks.gif" alt="Fireworks"><span>Fireworks</span></div>
+                <div class="gif-item" data-name="Music Button" data-color="0grey" data-type="music-note"><img src="GIF/musicButton.gif" alt="Music Button"><span>Music Button</span></div>
+                <div class="gif-item" data-name="Bunny" data-color="1.5purple" data-type="animal-bun"><img src="GIF/bunny.gif" alt="Bunny"><span>Bunny</span></div>
+                <div class="gif-item" data-name="Robot Dance" data-color="0black" data-type="people-z"><img src="GIF/roboDance.gif" alt="Robot Dance"><span>Robot Dance</span></div>
+                <div class="gif-item" data-name="iPod" data-color="0black" data-type="object-tech-music"><img src="GIF/iPod.gif" alt="iPod"><span>iPod</span></div>
+                <div class="gif-item" data-name="Gyroid" data-color="0grey" data-type="zabstract"><img src="GIF/math.gif" alt="Gyroid"><span>Gyroid</span></div>
+                <div class="gif-item" data-name="Godzilla" data-color="3green" data-type="animal-z"><img src="GIF/godzilla.gif" alt="Godzilla"><span>Godzilla</span></div>
+                <div class="gif-item" data-name="Salad" data-color="zvar" data-type="food"><img src="GIF/salad.gif" alt="Salad"><span>Salad</span></div>
+                <div class="gif-item" data-name="Fly" data-color="0grey" data-type="animal-bug-f"><img src="GIF/fly.gif" alt="Fly"><span>Fly</span></div>
+                <div class="gif-item" data-name="Robot" data-color="0grey" data-type="people-z"><img src="GIF/robot2.gif" alt="Robot"><span>Robot</span></div>
+                <div class="gif-item" data-name="Starfish" data-color="4yellow" data-type="animal-f-star"><img src="GIF/starfish.gif" alt="Starfish"><span>Starfish</span></div>
+                <div class="gif-item" data-name="Munch" data-color="4yellow" data-type="people-z-close"><img src="GIF/munch.gif" alt="Munch"><span>Munch</span></div>
+                <div class="gif-item" data-name="Bags" data-color="zvar" data-type="object"><img src="GIF/bags.gif" alt="Bags"><span>Bags</span></div>
+                <div class="gif-item" data-name="Butcher" data-color="zvar" data-type="people"><img src="GIF/butcher.gif" alt="Butcher"><span>Butcher</span></div>
+                <div class="gif-item" data-name="iPod" data-color="4yellow" data-type="object-tech-music"><img src="GIF/ipod2.gif" alt="iPod"><span>iPod</span></div>
+                <div class="gif-item" data-name="Backflip?" data-color="4yellow" data-type="people"><img src="GIF/backflip.gif" alt="Backflip?"><span>Backflip?</span></div>
+                <div class="gif-item" data-name="Bomb" data-color="5.5tan" data-type="people"><img src="GIF/bomb.gif" alt="Bomb"><span>Bomb</span></div>
+                <div class="gif-item" data-name="Car" data-color="4yellow" data-type="object-car"><img src="GIF/car2.gif" alt="Car"><span>Car</span></div>
+                <div class="gif-item" data-name="Car" data-color="2blue" data-type="object-car"><img src="GIF/car.gif" alt="Car"><span>Car</span></div>
+                <div class="gif-item" data-name="Seahorse" data-color="3green" data-type="animal-f-horse"><img src="GIF/seahorse2.gif" alt="Seahorse"><span>Seahorse</span></div>
+                <div class="gif-item" data-name="Bomb" data-color="0black" data-type="object"><img src="GIF/bomb2.gif" alt="Bomb"><span>Bomb</span></div>
+                <div class="gif-item" data-name="Starfish" data-color="4yellow" data-type="animal-f-star"><img src="GIF/star2.gif" alt="Starfish"><span>Starfish</span></div>
+                <div class="gif-item" data-name="Music&#x3c;3" data-color="0grey" data-type="music"><img src="GIF/muzik.gif" alt="Music&#x3c;3"><span>Music&#x3c;3</span></div>
+
+            </div>
+        </section>
+        <section id="main-about" class="main-section" style="display:none;">
+            <h2>About</h2>
+            <p>hello</p>
+        </section>
+    </main>
+    <footer>
+        <p>RECESS</p>
+    </footer>
+    <script src="css_js/style.js"></script>
+</body>
+</html>
+</html>
